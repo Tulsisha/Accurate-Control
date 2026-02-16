@@ -531,6 +531,13 @@ body{
 .service-content{
   padding:30px;
   position:relative;
+  height: 246px;
+}
+.swiper-pagination{
+  bottom: -6px !important;
+} 
+.service-content h5{
+  font-size: 18px;
 }
 
 .service-content p{
@@ -538,7 +545,10 @@ body{
   font-size:14px;
   margin-bottom:20px;
 }
-
+.testimonialSwiper .swiper-pagination{
+  bottom: -6px !important;
+  display: none;
+} 
 /* ICON BOX */
 .icon-box{
   width:50px;
@@ -981,11 +991,14 @@ body{
 .project-text {
     font-size: 15px;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
         height: 127px;
 }
 
 /* Image */
+.project-image{
+  overflow: hidden;
+}
 .project-image img {
     width: 100%;
     height: 220px;
@@ -1073,6 +1086,7 @@ body{
     width: 100%;
     padding: 12px;
     border: none;
+    border-radius: 5px;
 }
 
 .contact-save {

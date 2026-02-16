@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
@@ -32,28 +32,28 @@
 
             <!-- Navigation -->
             <nav class="main-nav">
-              <ul class="menu">
+                <ul class="menu">
 
-                  <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
 
-                  <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
 
-                  <li class="dropdown">
-                      <a href="#">Our Products <i class="fa-solid fa-chevron-down"></i></a>
-                      <ul class="submenu">
-                          <li><a href="siemens.html">Siemens</a></li>
-                          <li><a href="omron.html">Omron</a></li>
-                          <li><a href="meanwell.html">MeanWell</a></li>
-                          <li><a href="ul.html">UL</a></li>
-                          <li><a href="phoenix.html">Phoenix</a></li>
-                      </ul>
-                  </li>
+                    <li class="dropdown">
+                        <a href="#">Our Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="siemens.html">Siemens</a></li>
+                            <li><a href="omron.html">Omron</a></li>
+                            <li><a href="meanwell.html">MeanWell</a></li>
+                            <li><a href="ul.html">UL</a></li>
+                            <li><a href="phoenix.html">Phoenix</a></li>
+                        </ul>
+                    </li>
 
-                  <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
 
-                  <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
 
-              </ul>
+                </ul>
             </nav>
 
             <!-- Right Section -->
@@ -62,7 +62,7 @@
                     Get A Quote <span class="arrow">↗</span>
                 </a>
 
-               
+
 
                 <!-- HAMBURGER ICON -->
                 <div class="icon menu-icon" id="menuToggle">
@@ -129,8 +129,8 @@
     </section>
 
     <!-- about section================================= -->
-   
-   <section id="contact-layout-section">
+
+    <section id="contact-layout-section">
         <div class="container-fluid">
             <div class="row">
 
@@ -139,9 +139,12 @@
 
                     <!-- Map -->
                     <div class="contact-map-box">
-                       <iframe src="
-                            https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.841134689348!2d77.425067!3d28.608467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee52a404bb09%3A0x78eb248be63db9b2!2sAarza%20Square%20-%20Aarza%20Infratech!5e0!3m2!1sen!2sin!4v1769151626100!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        
+                        <iframe
+                            src="
+                            https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.841134689348!2d77.425067!3d28.608467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee52a404bb09%3A0x78eb248be63db9b2!2sAarza%20Square%20-%20Aarza%20Infratech!5e0!3m2!1sen!2sin!4v1769151626100!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
 
                     <!-- Form -->
@@ -150,78 +153,85 @@
                         <p>If you have any questions or need more information, please use the form below to send us a
                             message.</p>
 
-                       <form id="contactForm" action="send-mail.php" method="POST">
-    <textarea name="message" placeholder="Your Message" required=""></textarea>
+                        <form id="contactForm" action="send-mail.php" method="POST">
+                            <div class="contact-input-row">
+                                <input type="text" name="name" placeholder="Name *" required="" fdprocessedid="ptiw2s">
+                                <input type="email" name="email" placeholder="Email *" required=""
+                                    fdprocessedid="gfdyub">
+                            </div>
+                            <div class="contact-input-row">
+                                <input type="text" name="Phone" placeholder="Phone Number *" required fdprocessedid="ptiw2s">
+                                <input type="email" name="Service" placeholder="--Select Service---" required=""
+                                    fdprocessedid="gfdyub">
+                            </div>
+                            <textarea name="message" placeholder="Your Message" required=""></textarea>
 
-    <div class="contact-input-row">
-        <input type="text" name="name" placeholder="Name *" required="" fdprocessedid="ptiw2s">
-        <input type="email" name="email" placeholder="Email *" required="" fdprocessedid="gfdyub">
-    </div>
+                            
 
-    <label class="contact-save">
-        <input type="checkbox" id="saveInfo">
-        Save my name, email, and website in this browser for the next time I comment.
-    </label>
+                            <label class="contact-save">
+                                <input type="checkbox" id="saveInfo">
+                                Save my name, email, and website in this browser for the next time I comment.
+                            </label>
 
-    <button type="submit" fdprocessedid="0kdm78">SEND MESSAGE →</button>
+                            <button type="submit" fdprocessedid="0kdm78">SEND MESSAGE →</button>
 
-    <p id="formMsg"></p>
-</form>
+                            <p id="formMsg"></p>
+                        </form>
 
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
+                        <script>
+                            document.getElementById("contactForm").addEventListener("submit", function (e) {
+                                e.preventDefault();
 
-    let name = this.name.value.trim();
-    let email = this.email.value.trim();
-    let message = this.message.value.trim();
-    let msgBox = document.getElementById("formMsg");
+                                let name = this.name.value.trim();
+                                let email = this.email.value.trim();
+                                let message = this.message.value.trim();
+                                let msgBox = document.getElementById("formMsg");
 
-    if (!name || !email || !message) {
-        msgBox.innerHTML = "❌ All fields are required";
-        msgBox.style.color = "red";
-        return;
-    }
+                                if (!name || !email || !message) {
+                                    msgBox.innerHTML = "❌ All fields are required";
+                                    msgBox.style.color = "red";
+                                    return;
+                                }
 
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        msgBox.innerHTML = "❌ Invalid email address";
-        msgBox.style.color = "red";
-        return;
-    }
+                                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                if (!emailPattern.test(email)) {
+                                    msgBox.innerHTML = "❌ Invalid email address";
+                                    msgBox.style.color = "red";
+                                    return;
+                                }
 
-    msgBox.innerHTML = "⏳ Sending...";
-    msgBox.style.color = "blue";
+                                msgBox.innerHTML = "⏳ Sending...";
+                                msgBox.style.color = "blue";
 
-    fetch("send-mail.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-            name: name,
-            email: email,
-            message: message
-        })
-    })
-    .then(res => res.text())
-    .then(data => {
-        if (data.trim() === "success") {
-            msgBox.innerHTML = "✅ Message sent successfully!";
-            msgBox.style.color = "green";
-            document.getElementById("contactForm").reset();
-        } else {
-            msgBox.innerHTML = "❌ Failed to send message";
-            msgBox.style.color = "red";
-            console.error("Server response:", data);
-        }
-    })
-    .catch(err => {
-        msgBox.innerHTML = "❌ Network error";
-        msgBox.style.color = "red";
-        console.error(err);
-    });
-});
-</script>
+                                fetch("send-mail.php", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                                    body: new URLSearchParams({
+                                        name: name,
+                                        email: email,
+                                        message: message
+                                    })
+                                })
+                                    .then(res => res.text())
+                                    .then(data => {
+                                        if (data.trim() === "success") {
+                                            msgBox.innerHTML = "✅ Message sent successfully!";
+                                            msgBox.style.color = "green";
+                                            document.getElementById("contactForm").reset();
+                                        } else {
+                                            msgBox.innerHTML = "❌ Failed to send message";
+                                            msgBox.style.color = "red";
+                                            console.error("Server response:", data);
+                                        }
+                                    })
+                                    .catch(err => {
+                                        msgBox.innerHTML = "❌ Network error";
+                                        msgBox.style.color = "red";
+                                        console.error(err);
+                                    });
+                            });
+                        </script>
 
 
                     </div>
@@ -278,95 +288,95 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     <!-- footer============================================ -->
     <footer class="main-footer text-white">
 
-  <!-- CTA SECTION -->
-  <div class="footer-cta text-center text-lg-start">
-    <div class="container">
-      <div class="row align-items-center">
+        <!-- CTA SECTION -->
+        <div class="footer-cta text-center text-lg-start">
+            <div class="container">
+                <div class="row align-items-center">
 
-        <div class="col-lg-8 mb-4 mb-lg-0">
-          <h2 class="fw-bold">
-            Ready to elevate your business? Let’s discuss your plan!
-          </h2>
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h2 class="fw-bold">
+                            Ready to elevate your business? Let’s discuss your plan!
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="btn btn-light px-4 py-2">
+                            Request A Quote
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- ✅ footer-cta closed properly -->
+
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-content py-5">
+            <div class="container">
+                <div class="row g-4 forowcont">
+
+                    <!-- Column 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="fw-bold mb-3">Accurate Control</h4>
+                        <p>
+                            Delivering trusted automation and industrial control
+                            solutions for modern industries.
+                        </p>
+
+                        <div class="social-icons mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="fw-bold mb-3">Reach Us</h5>
+                        <p><strong>Address:</strong><br>
+                            Faridabad, Haryana
+                        </p>
+                        <p>
+                            <strong>Call Us:</strong><br>
+                            +91-XXXXXXXXXX
+                        </p>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="fw-bold mb-3">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="fw-bold mb-3">Products</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Seimens</a></li>
+                            <li><a href="#">Omron</a></li>
+                            <li><a href="#">Meanwell</a></li>
+                            <li><a href="#">UL</a></li>
+                            <li><a href="#">Phoenix</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- ✅ footer-content closed -->
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom text-center py-2">
+            © 2026 Accurate Control & Automation. All Rights Reserved.
         </div>
 
-        <div class="col-lg-4 text-lg-end">
-          <a href="#" class="btn btn-light px-4 py-2">
-            Request A Quote
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- ✅ footer-cta closed properly -->
-
-
-  <!-- MAIN FOOTER -->
-  <div class="footer-content py-5">
-    <div class="container">
-      <div class="row g-4 forowcont">
-
-        <!-- Column 1 -->
-        <div class="col-lg-4 col-md-6">
-          <h4 class="fw-bold mb-3">Accurate Control</h4>
-          <p>
-            Delivering trusted automation and industrial control
-            solutions for modern industries.
-          </p>
-
-          <div class="social-icons mt-3">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-lg-3 col-md-6">
-          <h5 class="fw-bold mb-3">Reach Us</h5>
-          <p><strong>Address:</strong><br>
-            Faridabad, Haryana
-          </p>
-          <p>
-            <strong>Call Us:</strong><br>
-            +91-XXXXXXXXXX
-          </p>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col-lg-2 col-md-6">
-          <h5 class="fw-bold mb-3">Explore</h5>
-          <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4 -->
-        <div class="col-lg-3 col-md-6">
-          <h5 class="fw-bold mb-3">Products</h5>
-          <ul class="footer-links">
-            <li><a href="#">Seimens</a></li>
-            <li><a href="#">Omron</a></li>
-            <li><a href="#">Meanwell</a></li>
-            <li><a href="#">UL</a></li>
-            <li><a href="#">Phoenix</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div> <!-- ✅ footer-content closed -->
-
-
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom text-center py-2">
-    © 2026 Accurate Control & Automation. All Rights Reserved.
-  </div>
-
-</footer>
+    </footer>
 
 
 
@@ -383,7 +393,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
 
 
 
-   
+
 
     <!-- sidebar menu=============================== -->
     <script>
@@ -409,7 +419,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
         });
 
     </script>
-   
+
 
 </body>
 
