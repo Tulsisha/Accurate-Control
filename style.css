@@ -1180,189 +1180,63 @@ body{
 }
 /* seiimen page============================================= */
 .railway-section {
-    padding: 80px 5%;
-    background: #f5f5f5;
+    padding: 60px 0;
 }
 
 .railway-container {
     display: flex;
-    gap: 60px;
+    max-width: 90%;
+    margin: auto;
+    align-items: flex-start;
 }
 
-/* LEFT TABS */
+/* LEFT SIDE TABS (STICKY) */
 .railway-tabs {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    width: 25%;
+    position: sticky;
+    top: 100px; /* header ke hisaab se adjust */
+    height: fit-content;
+}
+
+.tabs-title {
+    background: #0d6efd;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .railway-tab {
-    padding: 15px;
+    width: 100%;
+    padding: 12px;
     border: none;
-    text-align: left;
-    background: #e6e6e6;
+    background: #f2f2f2;
     cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.railway-tab:hover {
-    background: #d32f2f;
-    color: #fff;
+    text-align: left;
+    margin-bottom: 6px;
 }
 
 .railway-tab.active {
-    background: #333;
+    background: #0d6efd;
     color: #fff;
 }
 
-/* RIGHT CONTENT */
+/* RIGHT SIDE CONTENT (NO SCROLLBAR) */
 .railway-content {
-    width: 65%;
+    width: 75%;
+    padding-left: 30px;
 }
 
+/* TAB CONTENT */
 .railway-tab-content {
     display: none;
-    animation: fadeIn 0.4s ease;
 }
 
 .railway-tab-content.active {
     display: block;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-/* Wrapper */
-.railway-product-wrapper {
-    width: 100%;
-}
-
-/* Title */
-.railway-product-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: #0c8ea0;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-/* Red underline */
-.railway-title-underline {
-    height: 3px;
-    width: 100%;
-    background: #d32f2f;
-    margin-bottom: 30px;
-}
-
-/* Image */
-.railway-product-image img {
-    width: 70%;
-    max-width: 750px;
-    margin-bottom: 30px;
-}
-
-/* Description */
-.railway-product-description p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-/* Highlights */
-.railway-product-highlights h3 {
-    color: #0c8ea0;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.railway-product-highlights ul {
-    padding-left: 20px;
-}
-
-.railway-product-highlights li {
-    margin-bottom: 8px;
-}
-
-
-.blog-one {
-    position: relative;
-    display: block;
-    padding: 120px 0 90px;
-    z-index: 1;
-}
-
-.blog-one__shape-1 {
-    position: absolute;
-    top: 0;
-    right: -20px;
-    opacity: 0.05;
-    z-index: -1;
-}
-
-.blog-one__shape-1 img {
-    width: auto;
-}
-
-.blog-one__shape-2 {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
-    z-index: -1;
-}
-
-.blog-one__shape-2 img {
-    width: auto;
-}
-
-.blog-one__single {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.blog-one__img-box {
-    position: relative;
-    display: block;
-}
-
-.blog-one__img {
-    position: relative;
-    display: block;
-    border-top-left-radius: var(--fixpro-bdr-radius);
-    border-top-right-radius: var(--fixpro-bdr-radius);
-    overflow: hidden;
-    z-index: 1;
-}
-
-.blog-one__img:before {
-    position: absolute;
-    content: '';
-    left: 0px;
-    bottom: 0px;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(var(--fixpro-black-rgb), .70);
-    visibility: hidden;
-    opacity: 0;
-    transform-style: preserve-3d;
-    transform: perspective(370px) translateY(100%);
-    transform-origin: left;
-    transition: all 900ms ease;
-    -moz-transition: all 900ms ease;
-    -webkit-transition: all 900ms ease;
-    -ms-transition: all 900ms ease;
-    -o-transition: all 900ms ease;
-    z-index: 1;
-}
-
-
-.blog-one__single:hover .blog-one__img:before {
-    visibility: visible;
-    opacity: 1;
-    transform: perspective(370px) translateY(0%);
+.railway-tab-content img {
+    max-width: 100%;
+    margin: 20px 0;
 }
