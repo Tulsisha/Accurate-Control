@@ -1193,8 +1193,8 @@ body{
 /* LEFT SIDE TABS (STICKY) */
 .railway-tabs {
     width: 25%;
-    position: sticky;
-    top: 100px; /* header ke hisaab se adjust */
+    /* position: sticky; */
+    top: 100px;
     height: fit-content;
 }
 
@@ -1210,14 +1210,16 @@ body{
     width: 100%;
     padding: 12px;
     border: none;
-    background: #f2f2f2;
+    background: #0d6efd;
     cursor: pointer;
     text-align: left;
-    margin-bottom: 6px;
+    /* margin-bottom: 6px; */
+    border-bottom: 1px #000000 dashed;
+    color: #fff;
 }
 
 .railway-tab.active {
-    background: #0d6efd;
+    background: #130554;
     color: #fff;
 }
 
@@ -1236,7 +1238,135 @@ body{
     display: block;
 }
 
-.railway-tab-content img {
-    max-width: 100%;
-    margin: 20px 0;
+.railway-product-image {
+    overflow: hidden;               /* zoom ke time bahar na nikle */
+    /* border-radius: 12px; */
+}
+
+.railway-product-image img {
+    width: 100%;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Hover Animation */
+.railway-product-image:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.railway-product-title {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 14px;
+    color: #222;
+}
+
+/* COMMON underline styles */
+.railway-product-title::after,
+.railway-product-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: underlineDraw 3.5s ease-in-out infinite;
+}
+
+/* First underline */
+.railway-product-title::after {
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+    background-color: #0d6efd;
+}
+
+/* Second underline (slight delay) */
+.railway-product-title::before {
+    bottom: -6px;
+    width: 40%;
+    height: 3px;
+    background-color: #ff7a00;
+    animation-delay: 0.4s;
+}
+
+/* Animation with pause */
+@keyframes underlineDraw {
+    0% {
+        transform: scaleX(0);
+    }
+    30% {
+        transform: scaleX(1);
+    }
+    60% {
+        transform: scaleX(1); /* HOLD (pause) */
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Pointer Icon */
+.feature-list li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0d6efd;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Right side background */
+.railway-content {
+    position: relative;
+    width: 75%;
+    padding-left: 30px;
+    background-image: url("/images/rgbg.png"); /* aapki image */
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: bgMove 25s linear infinite;
+}
+
+/* Background movement animation */
+@keyframes bgMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 0;
+    }
+}
+
+/* Content readable rahe – overlay */
+.railway-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(255 255 255 / 77%);
+    z-index: 0;
+}
+
+/* Content upar rahe */
+.railway-content > * {
+    position: relative;
+    z-index: 1;
 }
